@@ -1,4 +1,3 @@
-import 'package:flutter/widgets.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:address_search_field/src/models/coords.dart';
 
@@ -25,5 +24,5 @@ class Bounds extends LatLngBounds {
   }
 
   @override
-  int get hashCode => hashValues(southwest, northeast);
+  int get hashCode => Object.hash(southwest, northeast);
 }
